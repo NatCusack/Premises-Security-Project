@@ -1,0 +1,25 @@
+___________________________________________________________________
+-------------------------------------------------------------------
+
+Weekly Log: 1
+Week Ending: 27/10/19
+
+Name: Nathan Cusack
+Project: Premises Security using Automatic Number Plate Recognition
+
+___________________________________________________________________
+-------------------------------------------------------------------
+
+This week I recieved the first set of parts for my project:
+	- Raspberry Pi 4 (4GB)		€49.63
+	- Raspberry Pi Camera V2	€28.40
+	- Raspberry Pi 4 Power Supply	€ 6.96
+	- 16GB Class 10 SD Card		€ 8.68
+
+I had some servo motors lying around so I plan to use them to 
+represent the electric gates.
+
+My plan for this week is:
+	- Set up ssh and portforwarding on the Pi
+	- Use the GPIO pins of the Pi to control 2 servo motors
+	- Start work on running a web server off the Pi
