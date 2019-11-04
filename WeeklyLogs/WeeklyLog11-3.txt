@@ -1,0 +1,33 @@
+___________________________________________________________________
+-------------------------------------------------------------------
+
+Weekly Log: 2
+Week Ending: 3/11/19
+
+Name: Nathan Cusack
+Project: Premises Security using Automatic Number Plate Recognition
+
+___________________________________________________________________
+-------------------------------------------------------------------
+
+This week I installed OpenCV V3.4.7. Whilst doing so I decided to
+make bash script to make it easier and less time consuming to 
+install if I need to do so in the future. 
+
+After getting openCV installed and tested, I moved on to using the 
+general purpose input/output (GPIO) pins of the RaspBerry Pi.
+I programmed some python code  to flash a led, and then hooked up one 
+of the pulse width modulation pins (PWM) to an osciliscope so I could 
+test a pwm. 
+
+I am relucatant to test the scripts with my servo as I
+can not seem to find the corresponding datasheet with the max current
+draw.
+
+
+My plan for next week is:
+	- Install Apache on the raspberry pi and run a basic webserver
+	- Add a login functionality to webserver
+	- Start work on Image processing code using OpenCV
+	- Order smaller servo motors that do not exceed the 16mA max 
+	  draw of the raspberry pi 4 model B 
