@@ -1,0 +1,31 @@
+
+___________________________________________________________________
+-------------------------------------------------------------------
+
+Weekly Log: 3
+Week Ending 10/11/19
+
+Name: Nathan Cusack
+Project Premises Security Using Automatic Number Plate Recognition
+
+___________________________________________________________________
+-------------------------------------------------------------------
+
+This week I installed Apache for the Raspberry Pi and started 
+working on my website. I added a log in and log out functionality.
+
+I also started working on my Open CV code. I enrolled in a free 
+OpenCV course on  Udemy to help get me started.
+
+Instead of ordering different servo motors i decided to use the 
+current motors I have and use an external power supply. 
+
+Productivity was less than usual due to various tests and assignments
+due this week.
+
+My plan for next week is:
+	- Have a rudimentary licences plate detection running on 
+	  images stored on the py
+	- Have a web-cam streaming to my apache server
+	- design a keypad for the RPi
+
