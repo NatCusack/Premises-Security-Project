@@ -1,0 +1,173 @@
+{
+    "data_type": "alpr_results", 
+    "epoch_time": 1575936245020, 
+    "img_height": 768, 
+    "img_width": 1024, 
+    "results": [
+        {
+            "plate": "12G3363", 
+            "confidence": 85.556847, 
+            "region_confidence": 0, 
+            "region": "gb", 
+            "plate_index": 0, 
+            "processing_time_ms": 63.392937, 
+            "candidates": [
+                {
+                    "matches_template": 0, 
+                    "plate": "12G3363", 
+                    "confidence": 85.556847
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "2G3363", 
+                    "confidence": 80.079849
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "12C3363", 
+                    "confidence": 74.832794
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "1ZG3363", 
+                    "confidence": 73.989113
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "1263363", 
+                    "confidence": 73.938042
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "12G333", 
+                    "confidence": 73.231911
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "1G3363", 
+                    "confidence": 73.018394
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "12G33E3", 
+                    "confidence": 72.904541
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "123363", 
+                    "confidence": 72.625984
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "12G33S3", 
+                    "confidence": 72.539841
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "12O3363", 
+                    "confidence": 72.256561
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "2C3363", 
+                    "confidence": 69.355797
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "ZG3363", 
+                    "confidence": 68.512108
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "263363", 
+                    "confidence": 68.461037
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "2G333", 
+                    "confidence": 67.754913
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "G3363", 
+                    "confidence": 67.541389
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "2G33E3", 
+                    "confidence": 67.427544
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "23363", 
+                    "confidence": 67.148987
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "2G33S3", 
+                    "confidence": 67.062836
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "2O3363", 
+                    "confidence": 66.779564
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "1ZC3363", 
+                    "confidence": 63.265068
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "12C333", 
+                    "confidence": 62.507874
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "1Z63363", 
+                    "confidence": 62.370308
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "1C3363", 
+                    "confidence": 62.294342
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "12C33E3", 
+                    "confidence": 62.180496
+                }
+            ], 
+            "coordinates": [
+                {
+                    "y": 545, 
+                    "x": 274
+                }, 
+                {
+                    "y": 539, 
+                    "x": 435
+                }, 
+                {
+                    "y": 572, 
+                    "x": 436
+                }, 
+                {
+                    "y": 578, 
+                    "x": 276
+                }
+            ], 
+            "matches_template": 0, 
+            "requested_topn": 25
+        }
+    ], 
+    "version": 2, 
+    "processing_time_ms": 537.255798, 
+    "regions_of_interest": [
+        {
+            "y": 0, 
+            "x": 0, 
+            "height": 768, 
+            "width": 1024
+        }
+    ]
+}
