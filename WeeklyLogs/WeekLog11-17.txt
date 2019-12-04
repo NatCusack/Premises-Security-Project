@@ -1,0 +1,31 @@
+-------------------------------------------------------------------
+
+Weekly Log: 4
+Week Ending: 3/11/17
+
+Name: Nathan Cusack
+Project: Premises Security using Automatic Number Plate Recognition
+
+___________________________________________________________________
+-------------------------------------------------------------------
+
+This week I researched OpenALPR which is an automatic licence plate
+recognition package built on OpenCV that scores high accuracy on character 
+recognition. I decided to use this package instead of building my own 
+system to save on time so I could spend more time working on the rest of
+the project
+
+After testing OpenALPR I wrote a small script to use the Raspberry Pi
+Camera to take a picture, then scan that picture for licence plates and 
+return the top 10 results. Testiing the script on my own car, I found 
+that the accuracy was very poor. After more research I found out that
+by default that OpenALPR is configured for US licence plates. Next week
+I will work on configuring OpenAPLR to on EU plates and change the 
+pattern to match that of EU licence plate.  
+
+
+
+My plan for next week is:
+	- web cam streaming to apache server
+	- design keypad schematic for raspberry pi
+	- improve python script for ALPR

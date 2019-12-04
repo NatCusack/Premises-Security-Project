@@ -1,0 +1,30 @@
+-------------------------------------------------------------------
+
+Weekly Log: 5
+Week Ending: 24/11/19
+
+Name: Nathan Cusack
+Project: Premises Security using Automatic Number Plate Recognition
+
+___________________________________________________________________
+-------------------------------------------------------------------
+
+This week I mainly focused on on my web server, I spent time on getting
+the raspberry pi camera to stream to the web page.I also set up a login in 
+page. On the home page I added a button to redirect the user to the live
+fedd from the camera. I noticed the the lattency lag from the camera to 
+the server was very high so I must research if there is a more efficient 
+way to stream the raspberry pi camera.
+
+I also researched and designed a 3 x 4 keypad that is going to used as a
+way to open the gates. It will be using a column row matrix to detect key 
+presses. 
+
+I created a gerber file for a pcb and sent it on to be milled.
+
+My plan for next week is:
+	- solder and test the PCB for the Keypad
+	- create a database for storing:
+		1) Approved Licence Plates
+		2) All Images that return a plate
+		3) Date and time of each plate captured
