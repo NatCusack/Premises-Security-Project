@@ -37,7 +37,7 @@ def gateOpen():
     
     leftGate.ChangeDutyCycle(2)
     rightGate.ChangeDutyCycle(10)
-    
+    time.sleep(0.5)
     leftGate.ChangeDutyCycle(0)
     rightGate.ChangeDutyCycle(0)
     
@@ -48,7 +48,7 @@ def gateClose():
 
     leftGate.ChangeDutyCycle(10)
     rightGate.ChangeDutyCycle(2)
-    
+    time.sleep(0.5)
     leftGate.ChangeDutyCycle(0)
     rightGate.ChangeDutyCycle(0)
 

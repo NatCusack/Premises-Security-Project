@@ -1,159 +1,159 @@
 {
     "data_type": "alpr_results", 
-    "epoch_time": 1575936245020, 
+    "epoch_time": 1575937373002, 
     "img_height": 768, 
     "img_width": 1024, 
     "results": [
         {
             "plate": "12G3363", 
-            "confidence": 85.556847, 
+            "confidence": 85.738693, 
             "region_confidence": 0, 
             "region": "gb", 
             "plate_index": 0, 
-            "processing_time_ms": 63.392937, 
+            "processing_time_ms": 59.013229, 
             "candidates": [
                 {
                     "matches_template": 0, 
                     "plate": "12G3363", 
-                    "confidence": 85.556847
+                    "confidence": 85.738693
                 }, 
                 {
                     "matches_template": 0, 
                     "plate": "2G3363", 
-                    "confidence": 80.079849
+                    "confidence": 83.43734
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "12C3363", 
-                    "confidence": 74.832794
+                    "plate": "02G3363", 
+                    "confidence": 82.933228
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "1ZG3363", 
-                    "confidence": 73.989113
+                    "plate": "O2G3363", 
+                    "confidence": 81.647972
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "D2G3363", 
+                    "confidence": 80.942513
                 }, 
                 {
                     "matches_template": 0, 
                     "plate": "1263363", 
-                    "confidence": 73.938042
+                    "confidence": 75.226578
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "12G333", 
-                    "confidence": 73.231911
-                }, 
-                {
-                    "matches_template": 0, 
-                    "plate": "1G3363", 
-                    "confidence": 73.018394
+                    "plate": "12G33G3", 
+                    "confidence": 73.342598
                 }, 
                 {
                     "matches_template": 0, 
                     "plate": "12G33E3", 
-                    "confidence": 72.904541
-                }, 
-                {
-                    "matches_template": 0, 
-                    "plate": "123363", 
-                    "confidence": 72.625984
-                }, 
-                {
-                    "matches_template": 0, 
-                    "plate": "12G33S3", 
-                    "confidence": 72.539841
-                }, 
-                {
-                    "matches_template": 0, 
-                    "plate": "12O3363", 
-                    "confidence": 72.256561
-                }, 
-                {
-                    "matches_template": 0, 
-                    "plate": "2C3363", 
-                    "confidence": 69.355797
-                }, 
-                {
-                    "matches_template": 0, 
-                    "plate": "ZG3363", 
-                    "confidence": 68.512108
+                    "confidence": 73.179283
                 }, 
                 {
                     "matches_template": 0, 
                     "plate": "263363", 
-                    "confidence": 68.461037
+                    "confidence": 72.925217
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "2G333", 
-                    "confidence": 67.754913
+                    "plate": "123363", 
+                    "confidence": 72.857719
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "G3363", 
-                    "confidence": 67.541389
+                    "plate": "0263363", 
+                    "confidence": 72.421104
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "12G333", 
+                    "confidence": 72.401924
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "O263363", 
+                    "confidence": 71.135857
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "2G33G3", 
+                    "confidence": 71.041237
                 }, 
                 {
                     "matches_template": 0, 
                     "plate": "2G33E3", 
-                    "confidence": 67.427544
+                    "confidence": 70.877914
                 }, 
                 {
                     "matches_template": 0, 
                     "plate": "23363", 
-                    "confidence": 67.148987
+                    "confidence": 70.556358
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "2G33S3", 
-                    "confidence": 67.062836
+                    "plate": "02G33G3", 
+                    "confidence": 70.537125
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "2O3363", 
-                    "confidence": 66.779564
+                    "plate": "D263363", 
+                    "confidence": 70.430389
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "1ZC3363", 
-                    "confidence": 63.265068
+                    "plate": "02G33E3", 
+                    "confidence": 70.373802
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "12C333", 
-                    "confidence": 62.507874
+                    "plate": "2G333", 
+                    "confidence": 70.100555
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "1Z63363", 
-                    "confidence": 62.370308
+                    "plate": "023363", 
+                    "confidence": 70.052254
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "1C3363", 
-                    "confidence": 62.294342
+                    "plate": "02G333", 
+                    "confidence": 69.596443
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "12C33E3", 
-                    "confidence": 62.180496
+                    "plate": "O2G33G3", 
+                    "confidence": 69.251877
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "O2G33E3", 
+                    "confidence": 69.088547
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "O23363", 
+                    "confidence": 68.766998
                 }
             ], 
             "coordinates": [
                 {
-                    "y": 545, 
-                    "x": 274
+                    "y": 595, 
+                    "x": 361
                 }, 
                 {
-                    "y": 539, 
-                    "x": 435
+                    "y": 605, 
+                    "x": 524
                 }, 
                 {
-                    "y": 572, 
-                    "x": 436
+                    "y": 639, 
+                    "x": 522
                 }, 
                 {
-                    "y": 578, 
-                    "x": 276
+                    "y": 628, 
+                    "x": 359
                 }
             ], 
             "matches_template": 0, 
@@ -161,7 +161,7 @@
         }
     ], 
     "version": 2, 
-    "processing_time_ms": 537.255798, 
+    "processing_time_ms": 529.118652, 
     "regions_of_interest": [
         {
             "y": 0, 
