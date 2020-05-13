@@ -1,0 +1,173 @@
+{
+    "data_type": "alpr_results", 
+    "epoch_time": 1589369939034, 
+    "img_height": 768, 
+    "img_width": 1024, 
+    "results": [
+        {
+            "plate": "PZ65BYV", 
+            "confidence": 79.659431, 
+            "region_confidence": 0, 
+            "region": "gb", 
+            "plate_index": 0, 
+            "processing_time_ms": 75.388504, 
+            "candidates": [
+                {
+                    "matches_template": 1, 
+                    "plate": "PZ65BYV", 
+                    "confidence": 79.659431
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ658YV", 
+                    "confidence": 77.64756
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ65BY", 
+                    "confidence": 77.625587
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ658Y", 
+                    "confidence": 75.613716
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ65YV", 
+                    "confidence": 73.212181
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "Z65BYV", 
+                    "confidence": 73.164536
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ65BV", 
+                    "confidence": 73.016495
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ65Y", 
+                    "confidence": 71.178337
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "Z658YV", 
+                    "confidence": 71.152664
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "Z65BY", 
+                    "confidence": 71.130692
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ658V", 
+                    "confidence": 71.004623
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ65B", 
+                    "confidence": 70.982651
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ5BYV", 
+                    "confidence": 70.828362
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "P265BYV", 
+                    "confidence": 69.981712
+                }, 
+                {
+                    "matches_template": 1, 
+                    "plate": "FZ65BYV", 
+                    "confidence": 69.786606
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZG5BYV", 
+                    "confidence": 69.768143
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "Z658Y", 
+                    "confidence": 69.11882
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ658", 
+                    "confidence": 68.970779
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ58YV", 
+                    "confidence": 68.81649
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZ5BY", 
+                    "confidence": 68.794525
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "P2658YV", 
+                    "confidence": 67.969841
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "P265BY", 
+                    "confidence": 67.947868
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "FZ658YV", 
+                    "confidence": 67.774734
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "PZG58YV", 
+                    "confidence": 67.756271
+                }, 
+                {
+                    "matches_template": 0, 
+                    "plate": "FZ65BY", 
+                    "confidence": 67.752769
+                }
+            ], 
+            "coordinates": [
+                {
+                    "y": 441, 
+                    "x": 292
+                }, 
+                {
+                    "y": 429, 
+                    "x": 500
+                }, 
+                {
+                    "y": 482, 
+                    "x": 504
+                }, 
+                {
+                    "y": 494, 
+                    "x": 296
+                }
+            ], 
+            "matches_template": 1, 
+            "requested_topn": 25
+        }
+    ], 
+    "version": 2, 
+    "processing_time_ms": 496.781769, 
+    "regions_of_interest": [
+        {
+            "y": 0, 
+            "x": 0, 
+            "height": 768, 
+            "width": 1024
+        }
+    ]
+}

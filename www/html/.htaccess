@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Live"
-AuthUserFile /etc/apache2/.htpasswd
-Require valid-user

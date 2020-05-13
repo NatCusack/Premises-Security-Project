@@ -1,159 +1,159 @@
 {
     "data_type": "alpr_results", 
-    "epoch_time": 1575937373002, 
-    "img_height": 768, 
-    "img_width": 1024, 
+    "epoch_time": 1587653890782, 
+    "img_height": 401, 
+    "img_width": 600, 
     "results": [
         {
-            "plate": "12G3363", 
-            "confidence": 85.738693, 
+            "plate": "4D6939", 
+            "confidence": 78.129448, 
             "region_confidence": 0, 
             "region": "gb", 
             "plate_index": 0, 
-            "processing_time_ms": 59.013229, 
+            "processing_time_ms": 124.296356, 
             "candidates": [
                 {
                     "matches_template": 0, 
-                    "plate": "12G3363", 
-                    "confidence": 85.738693
+                    "plate": "4D6939", 
+                    "confidence": 78.129448
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "2G3363", 
-                    "confidence": 83.43734
+                    "plate": "4D6339", 
+                    "confidence": 76.528687
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "02G3363", 
-                    "confidence": 82.933228
+                    "plate": "H4D6939", 
+                    "confidence": 76.051559
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "O2G3363", 
-                    "confidence": 81.647972
+                    "plate": "406939", 
+                    "confidence": 75.17057
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "D2G3363", 
-                    "confidence": 80.942513
+                    "plate": "4D6999", 
+                    "confidence": 74.820374
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "1263363", 
-                    "confidence": 75.226578
+                    "plate": "H4D6339", 
+                    "confidence": 74.450806
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "12G33G3", 
-                    "confidence": 73.342598
+                    "plate": "4D699", 
+                    "confidence": 74.425972
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "12G33E3", 
-                    "confidence": 73.179283
+                    "plate": "406339", 
+                    "confidence": 73.569809
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "263363", 
-                    "confidence": 72.925217
+                    "plate": "4D6399", 
+                    "confidence": 73.219612
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "123363", 
-                    "confidence": 72.857719
+                    "plate": "4D639", 
+                    "confidence": 73.216339
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "0263363", 
-                    "confidence": 72.421104
+                    "plate": "H406939", 
+                    "confidence": 73.092682
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "12G333", 
-                    "confidence": 72.401924
+                    "plate": "H4D6999", 
+                    "confidence": 72.742485
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "O263363", 
-                    "confidence": 71.135857
+                    "plate": "H4D699", 
+                    "confidence": 72.348091
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "2G33G3", 
-                    "confidence": 71.041237
+                    "plate": "4O6939", 
+                    "confidence": 71.916626
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "2G33E3", 
-                    "confidence": 70.877914
+                    "plate": "406999", 
+                    "confidence": 71.861496
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "23363", 
-                    "confidence": 70.556358
+                    "plate": "H406339", 
+                    "confidence": 71.491928
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "02G33G3", 
-                    "confidence": 70.537125
+                    "plate": "40699", 
+                    "confidence": 71.467087
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "D263363", 
-                    "confidence": 70.430389
+                    "plate": "4D693", 
+                    "confidence": 71.404198
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "02G33E3", 
-                    "confidence": 70.373802
+                    "plate": "D6939", 
+                    "confidence": 71.366272
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "2G333", 
-                    "confidence": 70.100555
+                    "plate": "04D6939", 
+                    "confidence": 71.327774
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "023363", 
-                    "confidence": 70.052254
+                    "plate": "H4D6399", 
+                    "confidence": 71.141731
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "02G333", 
-                    "confidence": 69.596443
+                    "plate": "H4D639", 
+                    "confidence": 71.138451
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "O2G33G3", 
-                    "confidence": 69.251877
+                    "plate": "4O6339", 
+                    "confidence": 70.315865
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "O2G33E3", 
-                    "confidence": 69.088547
+                    "plate": "406399", 
+                    "confidence": 70.260727
                 }, 
                 {
                     "matches_template": 0, 
-                    "plate": "O23363", 
-                    "confidence": 68.766998
+                    "plate": "40639", 
+                    "confidence": 70.257446
                 }
             ], 
             "coordinates": [
                 {
-                    "y": 595, 
-                    "x": 361
+                    "y": 142, 
+                    "x": 366
                 }, 
                 {
-                    "y": 605, 
-                    "x": 524
+                    "y": 142, 
+                    "x": 488
                 }, 
                 {
-                    "y": 639, 
-                    "x": 522
+                    "y": 168, 
+                    "x": 488
                 }, 
                 {
-                    "y": 628, 
-                    "x": 359
+                    "y": 168, 
+                    "x": 366
                 }
             ], 
             "matches_template": 0, 
@@ -161,13 +161,13 @@
         }
     ], 
     "version": 2, 
-    "processing_time_ms": 529.118652, 
+    "processing_time_ms": 267.440063, 
     "regions_of_interest": [
         {
             "y": 0, 
             "x": 0, 
-            "height": 768, 
-            "width": 1024
+            "height": 401, 
+            "width": 600
         }
     ]
 }

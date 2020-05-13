@@ -8,12 +8,7 @@ body {
   font-style:bold;
 
 }
-.webcam{
-  width:400px;
-  backgrund:#ccc;
-  border:10px solid #ddd;
-  margin:0 auto;	
-}
+
 
 ul {
   list-style-type: none;
@@ -58,21 +53,10 @@ li a.active {
 </div>
 
 <ul>
-  <li><a class="active" href="/index.php">Home</a></li>
-  <li><a href="/access.php">Access</a></li>
-  <li><a href="/licenceinfo.php">History</a></li>
+  <li><a href="/index.php">Home</a></li>
+  <li><a class="active" href="/approved.index">Approved Plates</a></li>
+  <li><a href="licenceinfo.php">History</a></li>
   <li style="float:right"><a href="/about.php">About</a></li>
-  <li style="float:right"><a href="/contact.php">Contact</a></li>   
+  <li style="float:right"><a href="/contact.php">Contact</a></li>  
 </ul>
-
-
-<h3>Welcome to Premises Security System</h3>
-<div class="webcam">
-	<img src='2020-05-13_12-38-58_pic.jpg'
-	<canvis id="canvas" width="400" height="300"></canvas>
-</div>
-
-<p></p>
-</body>
-</html>
 
