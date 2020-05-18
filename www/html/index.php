@@ -1,124 +1,117 @@
-Live Demo
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-size: 28px;
+  font-family:arial;
+  font-style:bold;
+
+}
+.webcam{
+  width:400px;
+  backgrund:#ccc;
+  border:10px solid #ddd;
+  margin:0 auto;	
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7d7d7d;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: #ffcd42;
+}
+
+li a.active {
+  background-color: #ffcd42;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Premises Security System</h2>
+</div>
+
+<ul>
+  <li><a class="active" href="/index.php">Home</a></li>
+  <li><a href="/access.php">Access</a></li>
+  <li><a href="/licenceinfo.php">History</a></li>
+  <li style="float:right"><a href="/about.php">About</a></li>
+  <li style="float:right"><a href="/contact.php">Contact</a></li>   
+</ul>
 <?php
-   ob_start();
-   session_start();
+
+require_once('../mysqli_connect.php');
+
+$car_ID_query = "SELECT carID FROM plates";
+$Car_IDs = @mysqli_query($dbc, $car_ID_query);
+
+
+if( $Car_IDs) {
+	$mostRecent = 0;
+while ( $car =  mysqli_fetch_array($Car_IDs) ) { 
+        $mostRecent += 1;
+	} 
+
+}
+else{
+        echo 'Failed Selection ' . mysqli_erro($dbc);
+
+}
+
+$image_query = "SELECT image FROM plates WHERE carID=" . $mostRecent . "" ;
+
+$image_result = @mysqli_query($dbc, $image_query);
+$image = mysqli_fetch_array($image_result);
+
 ?>
 
-<?
-   // error_reporting(E_ALL);
-   // ini_set("display_errors", 1);
+
+<h3>Welcome to Premises Security System</h3>
+<div class="webcam">
+<?php
+if( $image_result) {
+	echo '<img src="data:image/jpeg;base64,' .base64_encode( $image['image']) . '" height="300" width="400"/>' ;
+	echo '<canvis id="canvas" width="400" height="300"></canvas>';
+}
+else {
+	echo 'Failed to Retrieve Image';
+}
+?>
+</div>
+
+
+
+<p></p>
+</body>
+<?php
+	mysql_close($dbc);
 ?>
 
-<html lang = "en">
-   
-   <head>
-      <title>Tutorialspoint.com</title>
-      <link href = "css/bootstrap.min.css" rel = "stylesheet">
-      
-      <style>
-         body {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #ADABAB;
-         }
-         
-         .form-signin {
-            max-width: 330px;
-            padding: 15px;
-            margin: 0 auto;
-            color: #017572;
-         }
-         
-         .form-signin .form-signin-heading,
-         .form-signin .checkbox {
-            margin-bottom: 10px;
-         }
-         
-         .form-signin .checkbox {
-            font-weight: normal;
-         }
-         
-         .form-signin .form-control {
-            position: relative;
-            height: auto;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 10px;
-            font-size: 16px;
-         }
-         
-         .form-signin .form-control:focus {
-            z-index: 2;
-         }
-         
-         .form-signin input[type="email"] {
-            margin-bottom: -1px;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-            border-color:#017572;
-         }
-         
-         .form-signin input[type="password"] {
-            margin-bottom: 10px;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-            border-color:#017572;
-         }
-         
-         h2{
-            text-align: center;
-            color: #017572;
-         }
-      </style>
-      
-   </head>
-	
-   <body>
-      
-      <h2>Enter Username and Password</h2> 
-      <div class = "container form-signin">
-         
-         <?php
-            $msg = '';
-            
-            if (isset($_POST['login']) && !empty($_POST['username']) 
-               && !empty($_POST['password'])) {
-				
-               if ($_POST['username'] == 'nate' && 
-                  $_POST['password'] == '1234') {
-                  $_SESSION['valid'] = true;
-                  $_SESSION['timeout'] = time();
-                  $_SESSION['username'] = 'nate';
-                  
-                  echo 'You have entered valid use name and password';
-		  header('Refresh: 2; URL = home.php');
-
-               }else {
-                  $msg = 'Wrong username or password';
-               }
-            }
-         ?>
-      </div> <!-- /container -->
-      
-      <div class = "container">
-      
-         <form class = "form-signin" role = "form" 
-            action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
-            ?>" method = "post">
-            <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
-            <input type = "text" class = "form-control" 
-               name = "username" placeholder = "username" 
-               required autofocus></br>
-            <input type = "password" class = "form-control"
-               name = "password" placeholder = "password" required>
-            <button class = "btn btn-lg btn-primary btn-block" type = "submit" 
-               name = "login">Login</button>
-         </form>
-			
-         Click here to clean <a href = "logout.php" tite = "Logout">Session.
-         
-      </div> 
-      
-   </body>
 </html>
+
