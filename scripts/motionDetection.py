@@ -86,8 +86,3 @@ def motionDetection():
         if((distance1 - distance2) > 10):
             print("Car Approaching")
             return True
-    
-
-
-
-

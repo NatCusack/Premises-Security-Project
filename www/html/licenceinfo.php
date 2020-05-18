@@ -62,6 +62,7 @@ table {
   <li><a href="/access.php">Access</a></li>
   <li><a class="active" href="/licenceinfo.php">History</a></li>
   <li style="float:right"><a href="#about">About</a></li> 
+  <li style="float:right"><a href="/contact.php">Contact</a></li> 
 </ul>
 
 
@@ -77,9 +78,9 @@ if($response){
 	echo '<table align="left" cellspacing="5" cellpadding="8">
 			<thead>
 				<tr>
-					<td align="left"><b>Licence Plate</b><td>
-					<td align="left"><b>Date</b><td>
-					<td align="left"><b>Access</b><td>
+					<td align="left"><b>Licence Plate</b></td>
+					<td align="left"><b>Date</b></td>
+					<td align="left"><b>Access</b></td>
 				</tr>
 			</thead>
 			<tbody>';

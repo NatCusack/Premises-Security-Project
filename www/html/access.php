@@ -90,8 +90,10 @@ if (isset($_POST['submit'])){
 		<input type="submit" name="submit" value="addPlates">
 	</p>
 	<?php
-	$access = file_get_contents("../../approvedPlates.json");
-	$access = json_decode($access, true);
+	$access_plates = file_get_contents ("../../approved.json");
+        $access = json_decode($access_plates, true);
+	$blocked_plates = file_get_contents ("../../blocked.json");
+	$blocked =json_decode($blocked_plates, true);
 	?>
 	<b>Approved Plates</b>
 	<table>
@@ -104,7 +106,7 @@ if (isset($_POST['submit'])){
 		<tbody>
 			<?php
 			echo '<pre>';
-			foreach($access["approved"] as $row)
+			foreach($access as $row)
 			{
 				echo '<tr><td>'.$row["plate"].'</td><td>'.$row["date"].'</td></tr>';
 			}
@@ -125,7 +127,7 @@ if (isset($_POST['submit'])){
 		<tbody>
 			<?php
 			echo '<pre>';
-			foreach($access["blocked"] as $row)
+			foreach($blocked as $row)
 			{
 				echo '<tr><td>'.$row["plate"].'</td><td>'.$row["date"].'</td></tr>';
 			}
@@ -146,11 +148,6 @@ function pre_r( $array ) {
 
 }
 
-function getFile ( ) {
-	$currentdata = file_get_contents ("../../approvedPlates.json");
-	$array = json_decode($current_data, true);
-	return $array;
-}
 
 function prepareData ( $dataarray ) {
 
@@ -158,24 +155,35 @@ function prepareData ( $dataarray ) {
 	$new_array = array (
 		"plate"	=> $dataarray['LicencePlate'],
 		"date" => $d
-	);	
+	);
 	return $new_array;
 }
 
-function writeJson ( $array ) {
-	$finalData = json_encode($array);
-	file_put_contents("../../approvedPlates.json", $finalData);
-}
-
 function addApproved ( $array ) {
-	$file = getFile();
-	$formattedData = prepareData( $array);
-	$result = array_merge( $file['approved'] ,$formattedData);
-	writeJson($result);
+	$currentdata = file_get_contents ("../../approved.json");
+        $file = json_decode($currentdata, true);
+	$d = date("Y-m-d"); 
+        $formattedData = array (
+                "plate" => $array['LicencePlate'],
+                "date" => $d
+        );
+	$file[] = $formattedData;
+	$finaldata = json_encode($file);
+	file_put_contents('../../approved.json', $finaldata);
 }
 
 function addBlocked ( $array ) {
-	pre_r($array);
+	$currentdata = file_get_contents ("../../blocked.json");
+        $file = json_decode($currentdata, true);
+        $d = date("Y-m-d"); 
+        $formattedData = array (
+                "plate" => $array['LicencePlate'],
+                "date" => $d
+        );
+        $file[] = $formattedData;
+        $finaldata = json_encode($file);
+        file_put_contents('../../blocked.json', $finaldata);
+
 }
 
 ?>

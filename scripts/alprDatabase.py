@@ -7,18 +7,12 @@ def photoToBinary(photo_path):
         binaryData = image.read()
     return binaryData
 
-
-
-
-
-
 def addLatestScan(results,path_to_image):
     
-    connection = mysql.connector.connect(host = "192.168.1.2",
+    connection = mysql.connector.connect(host = "192.168.1.14",
                      user = "anpr",
                      password = "root",
                      db = "psp")
-    
     
     
     try:
@@ -37,4 +31,3 @@ def addLatestScan(results,path_to_image):
             
     finally:
         connection.close()
-

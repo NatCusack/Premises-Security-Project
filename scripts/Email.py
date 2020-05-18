@@ -4,7 +4,7 @@ import datetime
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 GMAIL_USERNAME = 'premisesgatenathan@gmail.com'
-GMAIL_PASSWORD = 'ANPR2020'
+GMAIL_PASSWORD = '***********'
 
 def sendmail( plate):
     headers = ["From: " + GMAIL_USERNAME, "Subject: Blocked Plate Detected" , "To: Nathan.James.Cusack@Gmail.com"]
@@ -25,10 +25,3 @@ def sendmail( plate):
     session.login(GMAIL_USERNAME, GMAIL_PASSWORD)
     
     session.sendmail(GMAIL_USERNAME, recipient, headers + "\r\n\r\n" + content)
-    
-
-    
-    
-    
-
-

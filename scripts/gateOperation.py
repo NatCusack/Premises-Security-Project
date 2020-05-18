@@ -6,7 +6,6 @@ GPIO.setmode(GPIO.BOARD)
 def gateOpen():
     
     
-    
     GPIO.setup(12, GPIO.OUT)
     GPIO.setup( 13, GPIO.OUT)
     
@@ -50,4 +49,3 @@ def gateClose():
     GPIO.cleanup(13)
     
 gateClose()
-

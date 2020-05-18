@@ -21,15 +21,3 @@ while(1):
             
             elif results[2] == "Blocked":
                 sendmail(results[0])
-                
-
-
-            
-                
-                
-            
-                
-        
-    
-
-

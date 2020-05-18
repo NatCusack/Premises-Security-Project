@@ -23,7 +23,6 @@ def camCapture():
 
 def licencePlateRecognition(image_path):
     
-    
 
     print("Scanning picture", "info")
     result = ["0"]
@@ -42,10 +41,6 @@ def licencePlateRecognition(image_path):
     print(n_results)
     if n_results > 0:
             print("Found {} licence plate(s)".format(n_results), "info")
-           #  d
-           
-           
-           
             
             result[0] = str(n_results)
             for i in range(n_results):
@@ -64,8 +59,4 @@ def licencePlateRecognition(image_path):
     print("Finished scan", "info") 
     
     
-
-        
-    
     return readResult
-

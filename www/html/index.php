@@ -64,15 +64,54 @@ li a.active {
   <li style="float:right"><a href="/about.php">About</a></li>
   <li style="float:right"><a href="/contact.php">Contact</a></li>   
 </ul>
+<?php
+
+require_once('../mysqli_connect.php');
+
+$car_ID_query = "SELECT carID FROM plates";
+$Car_IDs = @mysqli_query($dbc, $car_ID_query);
+
+
+if( $Car_IDs) {
+	$mostRecent = 0;
+while ( $car =  mysqli_fetch_array($Car_IDs) ) { 
+        $mostRecent += 1;
+	} 
+
+}
+else{
+        echo 'Failed Selection ' . mysqli_erro($dbc);
+
+}
+
+$image_query = "SELECT image FROM plates WHERE carID=" . $mostRecent . "" ;
+
+$image_result = @mysqli_query($dbc, $image_query);
+$image = mysqli_fetch_array($image_result);
+
+?>
 
 
 <h3>Welcome to Premises Security System</h3>
 <div class="webcam">
-	<img src='2020-05-13_12-38-58_pic.jpg'
-	<canvis id="canvas" width="400" height="300"></canvas>
+<?php
+if( $image_result) {
+	echo '<img src="data:image/jpeg;base64,' .base64_encode( $image['image']) . '" height="300" width="400"/>' ;
+	echo '<canvis id="canvas" width="400" height="300"></canvas>';
+}
+else {
+	echo 'Failed to Retrieve Image';
+}
+?>
 </div>
+
+
 
 <p></p>
 </body>
+<?php
+	mysql_close($dbc);
+?>
+
 </html>
 
