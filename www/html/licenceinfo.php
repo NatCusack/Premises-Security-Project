@@ -61,7 +61,7 @@ table {
   <li><a href="/index.php">Home</a></li>
   <li><a href="/access.php">Access</a></li>
   <li><a class="active" href="/licenceinfo.php">History</a></li>
-  <li style="float:right"><a href="#about">About</a></li> 
+  <li style="float:right"><a href="/about.php">About</a></li> 
   <li style="float:right"><a href="/contact.php">Contact</a></li> 
 </ul>
 
